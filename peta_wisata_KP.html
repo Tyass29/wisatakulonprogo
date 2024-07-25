@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3baee8395d43571dd3e7d3aafb92cccb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3baee8395d43571dd3e7d3aafb92cccb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3baee8395d43571dd3e7d3aafb92cccb = L.map(
+                "map_3baee8395d43571dd3e7d3aafb92cccb",
+                {
+                    center: [-7.807700043381863, 110.15441497958096],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56b51132e5d746a3cec0a487da6a6646 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3baee8395d43571dd3e7d3aafb92cccb);
+        
+    
+            var heat_map_fecabb36f3aa98ba76226cc59e9d2e78 = L.heatLayer(
+                [[-7.777215, 110.107378], [-7.762805319, 110.116167], [-7.769796146, 110.12106], [-7.658097303, 110.1487094], [-7.743019182, 110.1912205], [-7.799783349, 110.1236639]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_3baee8395d43571dd3e7d3aafb92cccb);
+        
+    
+            var marker_cluster_a21beb29d2ee52c30bc934d8e564ade8 = L.markerClusterGroup(
+                {}
+            );
+            map_3baee8395d43571dd3e7d3aafb92cccb.addLayer(marker_cluster_a21beb29d2ee52c30bc934d8e564ade8);
+        
+    
+            var marker_d1c2fb3d31991debd8f48ceb3bd4ebfa = L.marker(
+                [-7.777215, 110.107378],
+                {}
+            ).addTo(marker_cluster_a21beb29d2ee52c30bc934d8e564ade8);
+        
+    
+        var popup_cbdf6a3441f95d746a0a74201a4327b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76f0269f4cebc75b09b5705c4222d14b = $(`<div id="html_76f0269f4cebc75b09b5705c4222d14b" style="width: 100.0%; height: 100.0%;">Gunung Gajah:Jl. Sermo - Girimulyo, Katerban, Donorejo, Kec. Kokap, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55653</div>`)[0];
+                popup_cbdf6a3441f95d746a0a74201a4327b2.setContent(html_76f0269f4cebc75b09b5705c4222d14b);
+            
+        
+
+        marker_d1c2fb3d31991debd8f48ceb3bd4ebfa.bindPopup(popup_cbdf6a3441f95d746a0a74201a4327b2)
+        ;
+
+        
+    
+    
+            var marker_9dde5af9743c985e594c70f242e238be = L.marker(
+                [-7.762805319, 110.116167],
+                {}
+            ).addTo(marker_cluster_a21beb29d2ee52c30bc934d8e564ade8);
+        
+    
+        var popup_1c6f37bb5dc7e6b9ff9eba692f6bb1d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9296488455749e6e1460644dd167401 = $(`<div id="html_d9296488455749e6e1460644dd167401" style="width: 100.0%; height: 100.0%;">Ekowisata sungai mudal:Banyunganti, Jatimulyo, Girimulyo, Kulon Progo Regency, Special Region of Yogyakarta 55674</div>`)[0];
+                popup_1c6f37bb5dc7e6b9ff9eba692f6bb1d4.setContent(html_d9296488455749e6e1460644dd167401);
+            
+        
+
+        marker_9dde5af9743c985e594c70f242e238be.bindPopup(popup_1c6f37bb5dc7e6b9ff9eba692f6bb1d4)
+        ;
+
+        
+    
+    
+            var marker_8ce62d331f6ef6156d40611335d8b787 = L.marker(
+                [-7.769796146, 110.12106],
+                {}
+            ).addTo(marker_cluster_a21beb29d2ee52c30bc934d8e564ade8);
+        
+    
+        var popup_5d02a0d7cd2d589153961cc1321068c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b6aba942eb05643ed36280a4718cf7f = $(`<div id="html_3b6aba942eb05643ed36280a4718cf7f" style="width: 100.0%; height: 100.0%;">Air terjun kedung pedut:Jl. Kutogiri Gunung Kelir, Kembang, Jatimulyo, Kec. Girimulyo, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55674</div>`)[0];
+                popup_5d02a0d7cd2d589153961cc1321068c2.setContent(html_3b6aba942eb05643ed36280a4718cf7f);
+            
+        
+
+        marker_8ce62d331f6ef6156d40611335d8b787.bindPopup(popup_5d02a0d7cd2d589153961cc1321068c2)
+        ;
+
+        
+    
+    
+            var marker_b2a0175df814e267efe5e9a517f796be = L.marker(
+                [-7.658097303, 110.1487094],
+                {}
+            ).addTo(marker_cluster_a21beb29d2ee52c30bc934d8e564ade8);
+        
+    
+        var popup_738bea0ef03b5cbb7ca2920a138801df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3f6d63ffa115c6cf9017cf6b8112b97 = $(`<div id="html_f3f6d63ffa115c6cf9017cf6b8112b97" style="width: 100.0%; height: 100.0%;">Puncak widosari:Tritis, Ngargosari, Samigaluh, Kulon Progo Regency, Special Region of Yogyakarta 55673</div>`)[0];
+                popup_738bea0ef03b5cbb7ca2920a138801df.setContent(html_f3f6d63ffa115c6cf9017cf6b8112b97);
+            
+        
+
+        marker_b2a0175df814e267efe5e9a517f796be.bindPopup(popup_738bea0ef03b5cbb7ca2920a138801df)
+        ;
+
+        
+    
+    
+            var marker_5952890fc0413cc6228c1aab9a784068 = L.marker(
+                [-7.743019182, 110.1912205],
+                {}
+            ).addTo(marker_cluster_a21beb29d2ee52c30bc934d8e564ade8);
+        
+    
+        var popup_561e8d1920ed0a075a10f4a58b2c7eeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89ccbfdd645879eb81801a523393b85a = $(`<div id="html_89ccbfdd645879eb81801a523393b85a" style="width: 100.0%; height: 100.0%;">tinitah alam:Jetis, Pendoworejo, Girimulyo, Kulon Progo Regency, Special Region of Yogyakarta 55674</div>`)[0];
+                popup_561e8d1920ed0a075a10f4a58b2c7eeb.setContent(html_89ccbfdd645879eb81801a523393b85a);
+            
+        
+
+        marker_5952890fc0413cc6228c1aab9a784068.bindPopup(popup_561e8d1920ed0a075a10f4a58b2c7eeb)
+        ;
+
+        
+    
+    
+            var marker_c91200730af65c547ac08df9fad2df9d = L.marker(
+                [-7.799783349, 110.1236639],
+                {}
+            ).addTo(marker_cluster_a21beb29d2ee52c30bc934d8e564ade8);
+        
+    
+        var popup_63f4eafb099062fec54548be012f83fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f9974c85f495051183c1c501c943107 = $(`<div id="html_1f9974c85f495051183c1c501c943107" style="width: 100.0%; height: 100.0%;">pulepayung:Soropati RT.007/RW.003, Clapar 2, Hargotirto, Kec. Kokap, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55653</div>`)[0];
+                popup_63f4eafb099062fec54548be012f83fa.setContent(html_1f9974c85f495051183c1c501c943107);
+            
+        
+
+        marker_c91200730af65c547ac08df9fad2df9d.bindPopup(popup_63f4eafb099062fec54548be012f83fa)
+        ;
+
+        
+    
+</script>
+</html>

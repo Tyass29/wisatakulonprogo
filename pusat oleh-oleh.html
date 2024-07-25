@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3af423e230a52729d985c002400881ca {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3af423e230a52729d985c002400881ca" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3af423e230a52729d985c002400881ca = L.map(
+                "map_3af423e230a52729d985c002400881ca",
+                {
+                    center: [-7.807700043381863, 110.15441497958096],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d6b6b027814ad1d5f72d70bde97e9b8c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3af423e230a52729d985c002400881ca);
+        
+    
+            var heat_map_9fd8bfebb4bd156eb06355a78f32c32b = L.heatLayer(
+                [[-7.86678, 110.15], [-7.88885, 110.103], [-7.86536, 110.1593], [-7.86214, 110.158], [-7.85311, 110.1763], [-7.86408, 110.1604]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_3af423e230a52729d985c002400881ca);
+        
+    
+            var marker_cluster_a98fe8d788abd1d6763582eb82a297ca = L.markerClusterGroup(
+                {}
+            );
+            map_3af423e230a52729d985c002400881ca.addLayer(marker_cluster_a98fe8d788abd1d6763582eb82a297ca);
+        
+    
+            var marker_91b851315aa80ed2d64cd7c7e54fc239 = L.marker(
+                [-7.86678, 110.15],
+                {}
+            ).addTo(marker_cluster_a98fe8d788abd1d6763582eb82a297ca);
+        
+    
+        var popup_4cd2dfa8bf50ec0fd744c5c107746608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90050af8c65ce1c2365b07a63e169f5a = $(`<div id="html_90050af8c65ce1c2365b07a63e169f5a" style="width: 100.0%; height: 100.0%;">Pusat Oleh-oleh & Kerajinan Khas Jogja Wates Kulon Progo:Jl. KH Ahmad Dahlan, Dipan, Wates, Kec. Wates, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55651</div>`)[0];
+                popup_4cd2dfa8bf50ec0fd744c5c107746608.setContent(html_90050af8c65ce1c2365b07a63e169f5a);
+            
+        
+
+        marker_91b851315aa80ed2d64cd7c7e54fc239.bindPopup(popup_4cd2dfa8bf50ec0fd744c5c107746608)
+        ;
+
+        
+    
+    
+            var marker_1107be0bc8509d1ffc98c8ee441e908d = L.marker(
+                [-7.88885, 110.103],
+                {}
+            ).addTo(marker_cluster_a98fe8d788abd1d6763582eb82a297ca);
+        
+    
+        var popup_30779c7f3c47ec1ade7ac6a971788cf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15bdd554b611b00ef610eacebb7750f2 = $(`<div id="html_15bdd554b611b00ef610eacebb7750f2" style="width: 100.0%; height: 100.0%;">J&C Pusat Oleh Oleh Khas Jogja:Tanggalan, Palihan, Temon, Kulon Progo Regency, Special Region of Yogyakarta 55654</div>`)[0];
+                popup_30779c7f3c47ec1ade7ac6a971788cf7.setContent(html_15bdd554b611b00ef610eacebb7750f2);
+            
+        
+
+        marker_1107be0bc8509d1ffc98c8ee441e908d.bindPopup(popup_30779c7f3c47ec1ade7ac6a971788cf7)
+        ;
+
+        
+    
+    
+            var marker_30efb9c1b59cbbbbe4a7b41e1caa03ae = L.marker(
+                [-7.86536, 110.1593],
+                {}
+            ).addTo(marker_cluster_a98fe8d788abd1d6763582eb82a297ca);
+        
+    
+        var popup_698228490525b56f177bc52eb99903ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d03e8485dfa51f117e1c9572e554be3 = $(`<div id="html_4d03e8485dfa51f117e1c9572e554be3" style="width: 100.0%; height: 100.0%;">Toko Oleh-oleh Wingko SusiloWati:Jl. Kolonel Sugiono No.41, Durungan, Wates, Kec. Wates, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55651</div>`)[0];
+                popup_698228490525b56f177bc52eb99903ee.setContent(html_4d03e8485dfa51f117e1c9572e554be3);
+            
+        
+
+        marker_30efb9c1b59cbbbbe4a7b41e1caa03ae.bindPopup(popup_698228490525b56f177bc52eb99903ee)
+        ;
+
+        
+    
+    
+            var marker_7f38b70cb1338e94f18707099609f34c = L.marker(
+                [-7.86214, 110.158],
+                {}
+            ).addTo(marker_cluster_a98fe8d788abd1d6763582eb82a297ca);
+        
+    
+        var popup_67dcf521240b3d4be3c5697fa9e79662 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f757d1d209a67fbaf131e17d7a873e85 = $(`<div id="html_f757d1d209a67fbaf131e17d7a873e85" style="width: 100.0%; height: 100.0%;">Toko Fajar Baru LUMBUNG OLEH OLEH:Jl. Brigjen Katamso Jl. Wakapan No.R 44, Wates, Kec. Wates, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55651</div>`)[0];
+                popup_67dcf521240b3d4be3c5697fa9e79662.setContent(html_f757d1d209a67fbaf131e17d7a873e85);
+            
+        
+
+        marker_7f38b70cb1338e94f18707099609f34c.bindPopup(popup_67dcf521240b3d4be3c5697fa9e79662)
+        ;
+
+        
+    
+    
+            var marker_0f977e2ab83c58c1095277da6383a669 = L.marker(
+                [-7.85311, 110.1763],
+                {}
+            ).addTo(marker_cluster_a98fe8d788abd1d6763582eb82a297ca);
+        
+    
+        var popup_7cd69dd0c6d280ee13550b5e19c7fa9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_779298b09afe1301d91e729eeddfd14c = $(`<div id="html_779298b09afe1301d91e729eeddfd14c" style="width: 100.0%; height: 100.0%;">Pusat oleh oleh prasojo:45RF+4QR, Jl. KRT Kertodiningrat, Karang Tengah Kidul, Margosari, Kec. Pengasih, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55652</div>`)[0];
+                popup_7cd69dd0c6d280ee13550b5e19c7fa9e.setContent(html_779298b09afe1301d91e729eeddfd14c);
+            
+        
+
+        marker_0f977e2ab83c58c1095277da6383a669.bindPopup(popup_7cd69dd0c6d280ee13550b5e19c7fa9e)
+        ;
+
+        
+    
+    
+            var marker_38936086ae9b50d0f7939bb019299793 = L.marker(
+                [-7.86408, 110.1604],
+                {}
+            ).addTo(marker_cluster_a98fe8d788abd1d6763582eb82a297ca);
+        
+    
+        var popup_759df2de81be34402163c027e6eed398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5036d839e6843becd3a520849373260 = $(`<div id="html_a5036d839e6843becd3a520849373260" style="width: 100.0%; height: 100.0%;">Istana Oleh-Oleh Omah Gedhang JogjaKu:Jl. Gadingan No.13, Durungan, Wates, Kec. Wates, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55611</div>`)[0];
+                popup_759df2de81be34402163c027e6eed398.setContent(html_a5036d839e6843becd3a520849373260);
+            
+        
+
+        marker_38936086ae9b50d0f7939bb019299793.bindPopup(popup_759df2de81be34402163c027e6eed398)
+        ;
+
+        
+    
+</script>
+</html>

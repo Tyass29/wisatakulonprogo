@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c353f9272d33838a44100a027b58758 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5c353f9272d33838a44100a027b58758" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c353f9272d33838a44100a027b58758 = L.map(
+                "map_5c353f9272d33838a44100a027b58758",
+                {
+                    center: [-7.807700043381863, 110.15441497958096],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_002c746db0a736b9920fbd401438d435 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5c353f9272d33838a44100a027b58758);
+        
+    
+            var heat_map_ec405861f90a69b432dca2cbf8b208d1 = L.heatLayer(
+                [[-7.65371, 110.141], [-7.66808, 110.132], [-7.66489, 110.1773], [-7.7986, 110.1179], [-7.856, 110.1559], [-7.65148, 110.1467]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_5c353f9272d33838a44100a027b58758);
+        
+    
+            var marker_cluster_39de45a9c13f73f5e1790c8f2537f413 = L.markerClusterGroup(
+                {}
+            );
+            map_5c353f9272d33838a44100a027b58758.addLayer(marker_cluster_39de45a9c13f73f5e1790c8f2537f413);
+        
+    
+            var marker_c6ed9e2ae024c9dcbff06f11162cfd55 = L.marker(
+                [-7.65371, 110.141],
+                {}
+            ).addTo(marker_cluster_39de45a9c13f73f5e1790c8f2537f413);
+        
+    
+        var popup_25f3359227afd1d9af346e16ff391e8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8fac93fc101a50ae2975a985d84eca4 = $(`<div id="html_b8fac93fc101a50ae2975a985d84eca4" style="width: 100.0%; height: 100.0%;">rimbono Homestay:Nglinggo, Nglinggo Barat, Pagerharjo, Kec. Samigaluh, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55673</div>`)[0];
+                popup_25f3359227afd1d9af346e16ff391e8d.setContent(html_b8fac93fc101a50ae2975a985d84eca4);
+            
+        
+
+        marker_c6ed9e2ae024c9dcbff06f11162cfd55.bindPopup(popup_25f3359227afd1d9af346e16ff391e8d)
+        ;
+
+        
+    
+    
+            var marker_d6317ca84e74ba1c7a4a88952fc6898a = L.marker(
+                [-7.66808, 110.132],
+                {}
+            ).addTo(marker_cluster_39de45a9c13f73f5e1790c8f2537f413);
+        
+    
+        var popup_5386aff09a71e942b3c82d74827b6694 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d698ebac0bfe42930f6811d2d728fa8c = $(`<div id="html_d698ebac0bfe42930f6811d2d728fa8c" style="width: 100.0%; height: 100.0%;">Nabhan Homestay:Bulusari, Sarigono, Pagerharjo, Kec. Samigaluh, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55673</div>`)[0];
+                popup_5386aff09a71e942b3c82d74827b6694.setContent(html_d698ebac0bfe42930f6811d2d728fa8c);
+            
+        
+
+        marker_d6317ca84e74ba1c7a4a88952fc6898a.bindPopup(popup_5386aff09a71e942b3c82d74827b6694)
+        ;
+
+        
+    
+    
+            var marker_d5c0fad2f1f63bb8c19950773a96eee1 = L.marker(
+                [-7.66489, 110.1773],
+                {}
+            ).addTo(marker_cluster_39de45a9c13f73f5e1790c8f2537f413);
+        
+    
+        var popup_2bf27ff6c478df5c49592172c7047b65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7fd57e3a4caf4b0f14617520c724150 = $(`<div id="html_f7fd57e3a4caf4b0f14617520c724150" style="width: 100.0%; height: 100.0%;">Homestay Banyumili:Kayu Gede, Gerbosari, Kec. Samigaluh, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55673</div>`)[0];
+                popup_2bf27ff6c478df5c49592172c7047b65.setContent(html_f7fd57e3a4caf4b0f14617520c724150);
+            
+        
+
+        marker_d5c0fad2f1f63bb8c19950773a96eee1.bindPopup(popup_2bf27ff6c478df5c49592172c7047b65)
+        ;
+
+        
+    
+    
+            var marker_6b8ca7d8315c3cb13705b01ce8b19ab1 = L.marker(
+                [-7.7986, 110.1179],
+                {}
+            ).addTo(marker_cluster_39de45a9c13f73f5e1790c8f2537f413);
+        
+    
+        var popup_b0d68c18f994693aaf52e5ba0937e8a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5506923631a942bce938a19d3e0bbcd5 = $(`<div id="html_5506923631a942bce938a19d3e0bbcd5" style="width: 100.0%; height: 100.0%;">Homestay Jemakir:6429+F4X, Soropati, Hargotirto, Kec. Kokap, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55653</div>`)[0];
+                popup_b0d68c18f994693aaf52e5ba0937e8a7.setContent(html_5506923631a942bce938a19d3e0bbcd5);
+            
+        
+
+        marker_6b8ca7d8315c3cb13705b01ce8b19ab1.bindPopup(popup_b0d68c18f994693aaf52e5ba0937e8a7)
+        ;
+
+        
+    
+    
+            var marker_34a1da21ade56bb52d810a3f6766952b = L.marker(
+                [-7.856, 110.1559],
+                {}
+            ).addTo(marker_cluster_39de45a9c13f73f5e1790c8f2537f413);
+        
+    
+        var popup_4c0bcf0dc119e2bf4f2c6e93455e6e30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73014b2ab1e4ae45ad4ad6743d23ca69 = $(`<div id="html_73014b2ab1e4ae45ad4ad6743d23ca69" style="width: 100.0%; height: 100.0%;">Homestay roemah Wina 2 Kulom Progo:Jl. Suparman No.25, Terbah, Wates, Kec. Wates, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55651</div>`)[0];
+                popup_4c0bcf0dc119e2bf4f2c6e93455e6e30.setContent(html_73014b2ab1e4ae45ad4ad6743d23ca69);
+            
+        
+
+        marker_34a1da21ade56bb52d810a3f6766952b.bindPopup(popup_4c0bcf0dc119e2bf4f2c6e93455e6e30)
+        ;
+
+        
+    
+    
+            var marker_e241ab7a3cc531c16e1f8e8c4cb45718 = L.marker(
+                [-7.65148, 110.1467],
+                {}
+            ).addTo(marker_cluster_39de45a9c13f73f5e1790c8f2537f413);
+        
+    
+        var popup_ea7e767a6d438e5bc36dc2123294e467 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f5dcfc094656435a6b02749b8842865 = $(`<div id="html_6f5dcfc094656435a6b02749b8842865" style="width: 100.0%; height: 100.0%;">Arjuna Homestay:84RV+XJJ, Nglinggo Timur, Pagerharjo, Kec. Samigaluh, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta 55673</div>`)[0];
+                popup_ea7e767a6d438e5bc36dc2123294e467.setContent(html_6f5dcfc094656435a6b02749b8842865);
+            
+        
+
+        marker_e241ab7a3cc531c16e1f8e8c4cb45718.bindPopup(popup_ea7e767a6d438e5bc36dc2123294e467)
+        ;
+
+        
+    
+</script>
+</html>
